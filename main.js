@@ -83,7 +83,7 @@ class Field {
 
     print() {
         clear();
-        console.log("You are out of uniform, soldier! Where is your cover!?", '\n', "...you lost it???", '\n', "Trooper, do you UNDERSTAND the amount of Worldly Pain you have just visited upon yourself!?? The truth is that you've just lost an expensive piece of ARMY-ISSUE EQUIPMENT. That hat is going to come out of your PAY, and you will remain in this man's Army until you are FIVE HUNDRED AND TEN YEARS OLD, which is the number of years it will take you to pay for a Mark II Powered Combat Safari Hat!", '\n', '\n', "RETURN to the place where you misplaced your cover, RETRIEVE it, and REPORT back to ME! DISMISSED!", '\n', '\n', "press W to move up, S to move down, A to move left, and D to move right");
+        console.log("You are out of uniform, soldier! Where is your cover!?", '\n', "...you lost it???", '\n', "Trooper, do you UNDERSTAND the amount of Worldly Pain you have just visited upon yourself!?? The truth is that you've just lost an expensive piece of ARMY-ISSUE EQUIPMENT. That hat is going to come out of your PAY, and you will remain in this man's Army until you are FIVE HUNDRED AND TEN YEARS OLD, which is the number of years it will take you to pay for a Mark II Powered Combat Safari Hat!", '\n', '\n',"RETURN to the place where you misplaced your cover, RETRIEVE it, and REPORT back to ME! DISMISSED!", '\n', '\n', "press W to move up, S to move down, A to move left, and D to move right");
         const displayString = this.field.map(row => {
             return row.join('');
         }).join('\n');
@@ -107,7 +107,7 @@ class Field {
               this.locationX += 1;
               break;
             default:
-              console.log('Enter w, s, a, or d.');
+              console.log('WASD keys ONLY, you mo-ron! Or do we need to teach you basic motor skills again!?');
               this.askQuestion();
               break;
         }
